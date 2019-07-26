@@ -4,29 +4,34 @@ Nesse exercício, você está livre para escolher os nomes para suas variáveis 
 
 ```js
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
-?
+function soma(x, y){
+return x + y;
+}
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
-?
+var nsoma = soma( 2, 3 ) + 5;
 
 // Qual o valor atualizado dessa variável?
-?
+10
 
 // Declare uma nova variável, sem valor.
-?
+var nvalue;
 
 /*
 Crie uma função que adicione um valor à variável criada acima, e retorne a string:
     O valor da variável agora é VALOR.
 Onde VALOR é o novo valor da variável.
 */
-?
+function addValue(){
+  nvalue = 20;
+  return 'O valor da variável agora é ' + nvalue;
+}
 
 // Invoque a função criada acima.
-?
+addValue();
 
 // Qual o retorno da função? (Use comentários de bloco).
-?
+/*'O valor da variável agora é 20'*/
 
 /*
 Crie uma função com as seguintes características:
@@ -35,19 +40,35 @@ Crie uma função com as seguintes características:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
-?
+function nfunc(a, b, c){
+  if(a === undefined || b === undefined || c === undefined){
+    return 'Preencha todos os valores corretamente!';
+  } else {
+    return ( a * b * c ) + 2;
+    }
+}
+/*===============================================*/
+//Não precisa do 'else' por ter um 'return' na função
+function nfunc(a, b, c){
+  if(a === undefined || b === undefined || c === undefined){
+    return 'Preencha todos os valores corretamente!';
+  }
+  return ( a * b * c ) + 2;
+}
+
+
 
 // Invoque a função criada acima, passando só dois números como argumento.
-?
+nfunc(3, 4);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+//'Preencha todos os valores corretamente!'
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-?
+nfunc(1, 2, 3);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+//8
 
 /*
 Crie uma função com as seguintes características:
@@ -58,8 +79,33 @@ Crie uma função com as seguintes características:
 5. Se nenhum argumento for passado, retorne o valor booleano `false`.
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
-?
+function args( x, y, z){
+  if( x !== undefined && y === undefined && z === undefined ){
+    return x;
+  }
+  else if ( x !== undefined && y !== undefined && z === undefined ){
+    return x + y;
+  }
+  else if ( x !== undefined && y !== undefined && z !== undefined ){
+    return ( x + y ) / z;
+  }
+  else if ( x === undefined && y === undefined && z === undefined ){
+    return false;
+  }
+  else {
+    null
+  }
+}
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-?
+
+args(); // false
+args(1); // 1
+args(1, 2); // 3
+args(1, 2, 3); // 1
+
+
+
+
+
 ```
