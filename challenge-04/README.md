@@ -52,7 +52,7 @@ isTruthy('30');
 isTruthy([]);
 isTruthy({});
 isTruthy(function(){});
-isTruthy("Curso JS');
+isTruthy('Curso JS');
 isTruthy(20*5);
 isTruthy([2,4,5]);
 isTruthy([a:2, b:5]);
