@@ -154,13 +154,13 @@ carro.mudarCor('Red');  //Undefined
 carro.obterCor(); //'Red'
 
 // Mude a cor do carro para verde musgo.
-?
+carro.mudarCor('verde musgo');  //undefined
 
 // E agora, qual a cor do carro?
-?
+carro.obterCor(); //'verde musgo'
 
 // Qual a marca e modelo do carro?
-?
+carro.obterMarcaModelo();
 
 // Adicione 2 pessoas no carro.
 ?
