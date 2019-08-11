@@ -135,25 +135,21 @@ mostrar quantos assentos ainda podem ser ocupados, com a frase:
 - Se couber somente mais uma pessoa, mostrar a palavra "pessoa" no retorno
 citado acima, no lugar de "pessoas".
 */
-carro.adicionarPessoas = function(numPessoas) {
+carro.adidionarPessoas = function( numPessoas ){
   var totalPessoas = carro.quantidadePessoas + numPessoas;
-  if( carro.quantidadePessoas === carro.assentos ) {
+  if( carro.quantidadePessoas === carro.assentos ){
     return 'O carro já está lotado!';
   }
   
-  if( totalPessoas > carros.assentos ){
-    return 
-  };
-  
   if( totalPessoas > carro.assentos ){
-    return 'Só cabem mais [QUANTIDADE_DE_PESSOAS_QUE_CABEM] pessoas!';
-  };
+    var quantasPessoasCabem = carro.assentos - carro.quantidadePessoas;
+    var pluralOuSingular = quantasPessoasCabem === 1 ? ' pessoa' : ' pessoas';
+    return 'Só cabem mais ' + quantasPessoasCabem + pluralOuSingular +'!';
+  }
   
   carro.quantidadePessoas += numPessoas;
-  return 'Ja temos ' + carro.quantidadePessoas + ' pessoas no carro!';
+    return 'Já temos ' + carro.quantidadePessoas + ' pessoas no carro!';
 };
-
-
 
 
 /*
