@@ -63,7 +63,26 @@ propriedades:
 - Se o parâmetro não for passado, a função deve retornar o objeto com todos
 os livros.
 */
-// ?
+function book( bookName ){
+  var allBooks = {
+    'Segredos do Ninja JavaScript': {
+      quantidadePaginas: 488,
+      autor: 'John Resig & Bear Bibeault',
+      editora: 'Novatec'
+    },
+    'Introdução ao HTML5': {
+      quantidadePaginas: 220,
+      autor: 'Bruce Lawson & Remy Sharp',
+      editora: 'Alta Books'
+    },
+    'Smashing CSS': {
+      quantidadePaginas: 283,
+      autor: 'Erick A. Meyer',
+      editora: 'Bookman'
+  }
+};
+
+
 
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
