@@ -79,8 +79,20 @@ function book( bookName ){
       quantidadePaginas: 283,
       autor: 'Erick A. Meyer',
       editora: 'Bookman'
+    }
+  };
+  
+//1º modo de fazer
+  if ( !bookName ){
+    return allBooks;
   }
-};
+  
+  return allBooks[  bookName];
+
+  //2º modo de fazer
+  return !bookName ? allBooks : allBooks[ bookName ];
+  
+}
 
 
 
