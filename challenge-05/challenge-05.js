@@ -27,19 +27,28 @@ segundo, um número. A função deve retornar o valor de um índice do array que
 no primeiro parâmetro. O índice usado para retornar o valor, deve ser o número passado no
 segundo parâmetro.
 */
-// ?
+function myFunction2( arr, index ){
+  return arr[ index ];
+};
+
 
 /*
 Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
 */
-// ?
+var myarray2 = ['Alan', 40.1, true, [1, 2, '4l4n'], {b:2}];
+
 
 /*
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
-// ?
-
+console.log( myFunction2(myarray2, 0 ) );
+console.log( myFunction2(myarray2, 1 ) );
+console.log( myFunction2(myarray2, 2 ) );
+console.log( myFunction2(myarray2, 3 ) );
+console.log( myFunction2(myarray2, 4 ) );
+                
+                
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
 livro. Dentro dessa função, declare uma variável que recebe um objeto com as
