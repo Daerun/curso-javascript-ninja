@@ -105,14 +105,18 @@ usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
 */
 
-console.log( 'O livro Introdução ao HTML5 tem ' + book( 'Introdução ao HTML5' ).quantidadePaginas + ' páginas!' );
+var bkName = 'Smashing CSS';
+
+console.log( 'O livro ' + bName + ' tem ' + book( bkName ).quantidadePaginas + ' páginas!' );
 
 /*
 Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando
 a frase:
 "O autor do livro [NOME_DO_LIVRO] é [AUTOR]."
 */
-// ?
+
+console.log ( 'O autor do livro ' + bName + ' é ' + book( bName ).autor + '.' );
+
 
 /*
 Ainda com a função acima, imprima o nome da editora de um livro qualquer, usando
