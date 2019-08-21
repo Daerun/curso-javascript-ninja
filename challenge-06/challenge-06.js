@@ -30,8 +30,10 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
     - Se não houver time para a posição passada, deve retornar a mensagem:
     "Não temos a informação do time que está nessa posição."
 */
-// ?
-
+function showTeamPosition ( position ) {
+  return 'O time que está em ' + position + 'º lugar é o ' + teams[ position - 1 ] + '.';
+}
+  
 /*
 Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
 função acima. Entre esses 4, adicione 1 que não esteja entre os 5 primeiros.
